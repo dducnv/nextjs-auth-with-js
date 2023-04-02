@@ -27,6 +27,7 @@ export default function handler(req, res) {
                     const cookies = new Cookies(req, res, {
                         secure: process.env.NODE_ENV !== 'development',
                     });
+                    // save token to cookie
                     cookies.set('access_token', accessToken, {
                         httpOnly: true,
                         sameSite: 'lax',
