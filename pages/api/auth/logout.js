@@ -1,3 +1,7 @@
+/*
+* Thực hiện logout bằng cách xoá cookie
+*/
+
 import Cookies from 'cookies';
 
 export default function handler(req, res) {
